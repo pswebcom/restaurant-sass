@@ -1,0 +1,62 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)),
+    url("../images/bg.jpeg") center no-repeat;
+  background-size: cover;
+
+  .brand {
+    color: #fff;
+    @include flexLayout;
+    @include centering(15%);
+
+    .logo {
+      width: 116px;
+      height: 116px;
+      border: 3px solid $color-primary;
+      color: $color-primary;
+      font-size: 70px;
+      border-radius: 50%;
+      text-decoration: none;
+      margin-right: 20px;
+      @include flexLayout;
+    }
+
+    .main-name h1 {
+      font-family: $font-nunito;
+      font-size: 50px;
+      color: $color-gray;
+      @include fontStyling;
+    }
+
+    .sub-name {
+      font-family: $font-josefin;
+      font-size: 18px;
+      color: $color-gray;
+      text-align: center;
+      @include fontStyling;
+    }
+  }
+
+  &-banner {
+    font-family: $font-dancing-script;
+    text-align: center;
+    @include centering(50%);
+
+    & h1.main-heading {
+      font-family: $font-dancing-script;
+      font-size: 80px;
+      font-weight: 300;
+      color: $color-primary;
+      margin-bottom: 40px;
+    }
+
+    & h3.sub-heading {
+      font-family: $font-josefin;
+      font-size: 60px;
+      font-weight: 300;
+      color: $color-gray;
+    }
+  }
+}
