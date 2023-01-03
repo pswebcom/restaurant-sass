@@ -6,77 +6,59 @@
     url("../images/bg.jpeg") center no-repeat;
   background-size: cover;
 
-  .brand {
+  &-brand {
     color: #fff;
     @include flexLayout;
     @include centering(15%);
-
-    .logo {
-      width: 116px;
-      height: 116px;
-      border: 3px solid $color-primary;
-      color: $color-primary;
-      font-size: 70px;
-      border-radius: 50%;
-      text-decoration: none;
-      margin-right: 20px;
-      @include flexLayout;
-    }
-
-    .main-name h1 {
-      font-family: $font-nunito;
-      font-size: 50px;
-      color: $color-gray;
-      @include fontStyling;
-    }
-
-    .sub-name {
-      font-family: $font-josefin;
-      font-size: 18px;
-      color: $color-gray;
-      text-align: center;
-      @include fontStyling;
-    }
   }
 
   &-banner {
     font-family: $font-dancing-script;
     text-align: center;
     @include centering(50%);
+  }
+}
 
-    & h1.main-heading {
-      font-family: $font-dancing-script;
-      font-size: 80px;
-      font-weight: 300;
-      color: $color-primary;
-      margin-bottom: 40px;
+.about-us {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+
+  &-left {
+    width: 40%;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+    .stars {
+      margin: 30px 0;
     }
 
-    & h3.sub-heading {
+    .star {
+      font-size: 15px;
+      color: $color-primary;
+      margin-left: 10px;
+    }
+
+    .description {
       font-family: $font-josefin;
-      font-size: 60px;
-      font-weight: 300;
+      font-size: 18px;
+      font-style: italic;
       color: $color-gray;
-      margin-bottom: 30px;
-    }
+      text-align: justify;
 
-    & .main-btn {
-      width: 170px;
-      height: 45px;
-      font-family: $font-josefin;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: $color-primary;
-      background-color: transparent;
-      border: 1px solid $color-primary;
-      outline: none;
-      cursor: pointer;
-      transition: all 0.4s;
-
-      &:hover {
-        background-color: $color-primary;
-        color: $color-dark;
+      &::first-letter {
       }
     }
   }

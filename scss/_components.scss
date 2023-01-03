@@ -1,0 +1,61 @@
+.logo {
+  width: 116px;
+  height: 116px;
+  border: 3px solid $color-primary;
+  color: $color-primary;
+  font-size: 70px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-right: 20px;
+  @include flexLayout;
+}
+.main-name {
+  font-family: $font-nunito;
+  font-size: 50px;
+  color: $color-gray;
+  @include fontStyling;
+}
+
+.sub-name {
+  font-family: $font-josefin;
+  font-size: 18px;
+  color: $color-gray;
+  text-align: center;
+  @include fontStyling;
+}
+
+.main-heading {
+  font-family: $font-dancing-script;
+  font-size: 80px;
+  font-weight: 300;
+  color: $color-primary;
+  margin-bottom: 40px;
+}
+
+.sub-heading {
+  font-family: $font-josefin;
+  font-size: 50px;
+  font-weight: 300;
+  color: $color-gray;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  width: 170px;
+  height: 45px;
+  font-family: $font-josefin;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $color-primary;
+  background-color: transparent;
+  border: 1px solid $color-primary;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-dark;
+  }
+}

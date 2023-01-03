@@ -16,3 +16,19 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+@mixin mainHeading {
+  font-family: $font-dancing-script;
+  font-size: 80px;
+  font-weight: 300;
+  color: $color-primary;
+  margin-bottom: 40px;
+}
+
+@mixin subHeading {
+  font-family: $font-josefin;
+  font-size: 60px;
+  font-weight: 300;
+  color: $color-gray;
+  margin-bottom: 30px;
+}
