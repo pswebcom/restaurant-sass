@@ -131,9 +131,14 @@
     color: #fff;
     @include flexLayout;
     @include centering(15%);
-
     @media (max-width: 550px) {
       @include centering(12%);
+    }
+
+    @media (max-width: 375px) {
+      left: 55px;
+      top: 80px;
+      flex-direction: column;
     }
   }
 
@@ -241,6 +246,10 @@
     justify-content: space-between;
     margin-bottom: 70px;
 
+    @media (max-width: 375px) {
+      width: 220px;
+    }
+
     &-item {
       list-style: none;
     }
@@ -274,6 +283,10 @@
 
     @media (max-width: 550px) {
       font-size: 12px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 6px;
     }
   }
 }
