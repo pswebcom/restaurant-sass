@@ -27,10 +27,6 @@
         @media (max-width: 1300px) {
           width: 70%;
         }
-
-        // @media (max-width: 642px) {
-        //   width: 150px;
-        // }
       }
 
       .left-img-1 {
@@ -81,6 +77,14 @@
         margin: 20px;
         text-align: center;
         transition: all 0.5s;
+
+        @media (max-width: 800px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 375px) {
+          font-size: 30px;
+        }
 
         &:hover {
           color: $color-primary;
